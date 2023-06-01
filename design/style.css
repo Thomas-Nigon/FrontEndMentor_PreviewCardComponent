@@ -31,6 +31,9 @@ body {
     background-color: var(--main-color);
     padding: 1rem;
 }
+.pictureContainer > .desktopPic{
+    display: none;
+}
 .flexContainer {
     border-radius: 10px;
     font-family: 'montserrat', sans-serif;
@@ -44,7 +47,6 @@ body {
     border-top-right-radius: 10px;
     width: 100%;
     height: auto;
-    display: block;
   }
 
 header{
@@ -110,8 +112,25 @@ footer {
     margin-top: auto;
     text-align: center;
 }
-@media screen and (min-width: 375px) { 
+
+@media screen and (min-width: 376px) { 
     body {
-        background-color: black;
+        background-color: rgb(105, 78, 78);
+        
+    }    
+  
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .pictureContainer > .mobilePic {
+        display: none;
+    }
+    .pictureContainer > .desktopPic{
+        display: flex;
+    }
+    .flexContainer{
+        flex-direction: row;    
+  
     }
 }
