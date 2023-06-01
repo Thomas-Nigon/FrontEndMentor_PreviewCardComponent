@@ -1,0 +1,136 @@
+/* ### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500;700&display=swap');@import url("https://fonts.google.com/specimen/Fraunces");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;700&family=Montserrat:wght@100;200;500;700&display=swap');
+:root{
+    --main-color: hsl(30, 38%, 92%);
+    --secondary-color: hsl(158, 36%, 37%);
+    --main-font-color: hsl(212, 21%, 14%);
+    --secondary-font-color: hsl(228, 12%, 48%);
+  }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+body {   
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--main-color);
+    padding: 1rem;
+}
+.pictureContainer > .desktopPic{
+    display: none;
+}
+.flexContainer {
+    border-radius: 10px;
+    font-family: 'montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    background-color:white;
+}
+.pictureContainer > img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+header{
+    padding: 1.2rem;
+    color:var(--secondary-font-color);
+    font-size: .8rem;
+    letter-spacing: .4rem;
+    font-weight: 500;
+}
+h1 {
+    font-family: 'fraunces', sans-serif;
+    margin-left: 1.2rem;
+    text-align: left;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1;
+}
+p {
+    margin-top: 1rem;
+    color: var(--secondary-font-color);
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 1.5rem;
+    font-style: normal;
+    margin-left: 1.2rem;
+}
+
+.productPrice {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content:left;
+}
+.newPrice {
+    margin-left: 1.2rem;
+    font-family: 'fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--secondary-color);
+
+}
+.oldPrice {
+    align-self: center;
+    margin-left: 10%;
+    background-color: azure;
+    font-family: 'montserrat', sans-serif;   
+    color: var(--secondary-font-color);
+    text-decoration: line-through;
+}
+button {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 376px) { 
+    body {
+        background-color: rgb(105, 78, 78);
+        
+    }    
+  
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .pictureContainer > .mobilePic {
+        display: none;
+    }
+    .pictureContainer > .desktopPic{
+        display: flex;
+    }
+    .flexContainer{
+        flex-direction: row;    
+  
+    }
+}
